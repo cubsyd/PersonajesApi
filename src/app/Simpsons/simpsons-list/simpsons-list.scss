@@ -5,7 +5,7 @@
 }
 
 .card-simpsons {
-  background: #facc15;
+  background: linear-gradient(135deg, #713f12 0%, #facc15 45%, #fef3c7 100%);
   border-radius: 0.75rem;
   padding: 0.75rem;
   cursor: pointer;
@@ -18,7 +18,7 @@
 }
 
 .card-simpsons:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .card-simpsons img {

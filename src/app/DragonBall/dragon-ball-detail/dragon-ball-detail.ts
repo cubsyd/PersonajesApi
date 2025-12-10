@@ -8,7 +8,7 @@ import { DragonBallDetailModel } from '../../models/DragonBall/dragon-ball-detai
 @Component({
   selector: 'app-dragon-ball-detail',
   standalone: true,
-  imports: [CommonModule],   // necesario para *ngIf
+  imports: [CommonModule],
   templateUrl: './dragon-ball-detail.html',
   styleUrls: ['./dragon-ball-detail.scss']
 })

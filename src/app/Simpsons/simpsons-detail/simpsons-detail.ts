@@ -7,7 +7,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-simpsons-detail',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './simpsons-detail.html'
+  templateUrl: './simpsons-detail.html',
+  styleUrls: ['./simpsons-detail.scss']
 })
 export class SimpsonsDetailComponent implements OnInit {
 

@@ -7,7 +7,7 @@ import { RickAndMortyDetailModel } from '../../models/RickAndMortyModels/rick-an
 @Component({
   selector: 'app-rick-and-morty-detail',
   standalone: true,
-  imports: [CommonModule], // necesario para *ngIf
+  imports: [CommonModule],
   templateUrl: './rick-and-morty-detail.html',
   styleUrls: ['./rick-and-morty-detail.scss']
 })
