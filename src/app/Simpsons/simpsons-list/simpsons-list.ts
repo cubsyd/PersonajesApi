@@ -7,7 +7,8 @@ import { SimpsonsApiService } from '../../Services/simpsons-api';
   selector: 'app-simpsons-list',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './simpsons-list.html'
+  templateUrl: './simpsons-list.html',
+  styleUrls: ['./simpsons-list.scss']
 })
 export class SimpsonsListComponent implements OnInit {
 

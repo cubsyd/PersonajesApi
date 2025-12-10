@@ -1,6 +1,9 @@
-<section *ngIf="character" style="padding:16px; background:#fef3c7; border-radius:12px; max-width:400px;">
-  <h2>{{ character.name }}</h2>
-  <p><strong>Ocupación:</strong> {{ character.occupation }}</p>
-  <p><strong>Edad:</strong> {{ character.age }}</p>
-  <p><strong>Estado:</strong> {{ character.status }}</p>
+<section *ngIf="character" style="padding:16px; background:#fef3c7; border-radius:12px; max-width:420px; display:grid; grid-template-columns:180px 1fr; gap:1rem;">
+  <img [src]="'https://thesimpsonsapi.com' + character.portrait_path" [alt]="character.name" style="width:100%; border-radius:0.75rem;" />
+  <div>
+    <h2>{{ character.name }}</h2>
+    <p><strong>Ocupación:</strong> {{ character.occupation }}</p>
+    <p><strong>Edad:</strong> {{ character.age }}</p>
+    <p><strong>Estado:</strong> {{ character.status }}</p>
+  </div>
 </section>
