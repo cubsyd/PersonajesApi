@@ -1,1 +1,16 @@
-<p>dragon-ball-list works!</p>
+<section class="dragon-container">
+  <h1>Personajes de Dragon Ball</h1>
+
+  <div class="dragon-grid">
+    <article
+      *ngFor="let c of characters"
+      class="dragon-card"
+      [routerLink]="['/dragon', c.id]"
+    >
+      <img *ngIf="c.image" [src]="c.image" [alt]="c.name" class="dragon-image" />
+
+      <h2>{{ c.name }}</h2>
+      <p>Ki: {{ c.ki }}</p>
+    </article>
+  </div>
+</section>

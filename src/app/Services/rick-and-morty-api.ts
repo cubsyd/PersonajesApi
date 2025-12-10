@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { RickAndMortyListModel } from '../models/RickAndMortyModels/RickAndMortyListModel';
-import { RickAndMortyDetailModel } from '../models/RickAndMortyModels/RickAndMortyDetailModel';
+import { RickAndMortyListModel } from '../models/RickAndMortyModels/rick-and-morty-list-model.Model';
+import { RickAndMortyDetailModel } from '../models/RickAndMortyModels/rick-and-morty-detail-model.Model';
 
 @Injectable({
   providedIn: 'root'

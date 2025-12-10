@@ -1,0 +1,30 @@
+.cards-rick {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card-rick {
+  background: #16a34a; // verde más claro
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  box-shadow: 0 0 0 1px #22c55e33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 260px;
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.card-rick img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,11 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { SimpsonsApiService } from '../../Services/simpsons-api';
 
 @Component({
   selector: 'app-simpsons-list',
-  imports: [],
-  templateUrl: './simpsons-list.html',
-  styleUrl: './simpsons-list.scss',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
+  templateUrl: './simpsons-list.html'
 })
-export class SimpsonsList {
+export class SimpsonsListComponent implements OnInit {
 
+  characters: any[] = [];
+
+  constructor(private api: SimpsonsApiService) {}
+
+  ngOnInit(): void {
+    this.api.getCharacters().subscribe(data => {
+      console.log('Simpsons:', data);
+      this.characters = data;
+    });
+  }
 }

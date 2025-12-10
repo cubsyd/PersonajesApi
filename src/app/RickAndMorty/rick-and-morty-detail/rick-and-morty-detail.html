@@ -1,1 +1,11 @@
-<p>rick-and-morty-detail works!</p>
+<section *ngIf="character as ch" class="detail-rick">
+  <img [src]="ch.image" [alt]="ch.name || 'N/A'" />
+  <div>
+    <h2>{{ ch.name || 'N/A' }}</h2>
+    <p><strong>Status:</strong> {{ ch.status || 'N/A' }}</p>
+    <p><strong>Species:</strong> {{ ch.species || 'N/A' }}</p>
+    <p><strong>Gender:</strong> {{ ch.gender || 'N/A' }}</p>
+    <p><strong>Origin:</strong> {{ ch.origin?.name || 'N/A' }}</p>
+    <p><strong>Location:</strong> {{ ch.location?.name || 'N/A' }}</p>
+  </div>
+</section>

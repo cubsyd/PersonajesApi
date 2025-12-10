@@ -1,1 +1,14 @@
-<p>simpsons-list works!</p>
+<h1>Personajes de Los Simpsons</h1>
+
+<div style="display:flex; flex-wrap:wrap; gap:20px;">
+
+  <div *ngFor="let c of characters"
+       [routerLink]="['/simpsons', c.id]"
+       style="width:220px; padding:12px; border-radius:10px; background:#facc15; cursor:pointer;">
+
+    <h3 style="margin:0 0 4px; font-weight:bold;">{{ c.name }}</h3>
+    <p style="margin:0;">{{ c.occupation }}</p>
+
+  </div>
+
+</div>

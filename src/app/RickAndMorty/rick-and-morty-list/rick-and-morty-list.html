@@ -1,1 +1,13 @@
-<p>rick-and-morty-list works!</p>
+<h2>Personajes Rick &amp; Morty</h2>
+
+<div class="cards-rick">
+  <article
+    class="card-rick"
+    *ngFor="let c of characters"
+    [routerLink]="['/rick', c.id]"
+  >
+    <img [src]="c.image" [alt]="c.name" />
+    <h3>{{ c.name }}</h3>
+    <p>{{ c.status }} - {{ c.species }}</p>
+  </article>
+</div>

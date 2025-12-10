@@ -1,0 +1,23 @@
+body {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.navbar {
+  background: #020617;
+  border-bottom: 1px solid #1f2937;
+}
+
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  color: #22c55e;
+  border-bottom: 2px solid #22c55e;
+}
+
+.main-container {
+  padding: 1.5rem 2rem;
+}

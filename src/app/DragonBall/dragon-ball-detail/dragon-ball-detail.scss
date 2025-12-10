@@ -1,0 +1,21 @@
+.detail-dragon {
+  background-color: #020617;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #f9fafb;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.detail-dragon-image {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.detail-dragon-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

@@ -1,1 +1,6 @@
-<p>simpsons-detail works!</p>
+<section *ngIf="character" style="padding:16px; background:#fef3c7; border-radius:12px; max-width:400px;">
+  <h2>{{ character.name }}</h2>
+  <p><strong>Ocupación:</strong> {{ character.occupation }}</p>
+  <p><strong>Edad:</strong> {{ character.age }}</p>
+  <p><strong>Estado:</strong> {{ character.status }}</p>
+</section>

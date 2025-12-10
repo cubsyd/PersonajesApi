@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { DragonBallListModel } from '../models/DragonBall/DragonBallListModel';
-import { DragonBallDetailModel } from '../models/DragonBall/DragonBallDetailModel';
+import { DragonBallListModel } from '../models/DragonBall/dragon-ball-list-model.Model';
+import { DragonBallDetailModel } from '../models/DragonBall/dragon-ball-detail-model.Model';
 
 @Injectable({
   providedIn: 'root'

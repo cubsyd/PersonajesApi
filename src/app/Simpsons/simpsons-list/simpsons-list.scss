@@ -1,0 +1,17 @@
+.cards-simpsons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card-simpsons {
+  background: #facc15;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.card-simpsons:hover {
+  transform: translateY(-4px);
+}

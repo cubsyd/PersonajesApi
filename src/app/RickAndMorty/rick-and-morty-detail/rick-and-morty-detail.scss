@@ -1,0 +1,16 @@
+.detail-rick {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1rem;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px #ddd;
+}
+
+.detail-rick img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
