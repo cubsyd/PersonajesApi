@@ -3,5 +3,4 @@ export interface SimpsonsListModel {
   name: string;
   occupation: string;
   portrait_path?: string;
-  image?: string;
 }

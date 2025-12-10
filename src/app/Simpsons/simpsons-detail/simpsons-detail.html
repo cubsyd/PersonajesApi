@@ -1,5 +1,5 @@
 <section *ngIf="character" class="detail-simpsons">
-  <img [src]="'https://thesimpsonsapi.com' + character.portrait_path" [alt]="character.name" class="detail-simpsons-image" />
+  <img src="https://cdn.thesimpsonsapi.com/500{{ character.portrait_path }}" />
   <div class="detail-simpsons-info">
     <h2>{{ character.name }}</h2>
     <p><strong>Ocupación:</strong> {{ character.occupation }}</p>

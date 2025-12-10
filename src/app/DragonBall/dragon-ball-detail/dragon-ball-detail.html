@@ -2,11 +2,11 @@
   <img *ngIf="ch.image" [src]="ch.image" [alt]="ch.name" class="detail-dragon-image" />
 
   <div class="detail-dragon-info">
-    <h2>{{ ch.name || 'N/A' }}</h2>
-    <p><strong>Ki:</strong> {{ ch.ki || 'N/A' }}</p>
-    <p><strong>Máx Ki:</strong> {{ ch.maxKi || 'N/A' }}</p>
-    <p><strong>Raza:</strong> {{ ch.race || 'N/A' }}</p>
-    <p><strong>Afiliación:</strong> {{ ch.affiliation || 'N/A' }}</p>
-    <p><strong>Descripción:</strong> {{ ch.description || 'N/A' }}</p>
+    <h2>{{ ch.name }}</h2>
+    <p><strong>Ki:</strong> {{ ch.ki }}</p>
+    <p><strong>Máx Ki:</strong> {{ ch.maxKi }}</p>
+    <p><strong>Raza:</strong> {{ ch.race }}</p>
+    <p><strong>Afiliación:</strong> {{ ch.affiliation }}</p>
+    <p><strong>Descripción:</strong> {{ ch.description }}</p>
   </div>
 </section>

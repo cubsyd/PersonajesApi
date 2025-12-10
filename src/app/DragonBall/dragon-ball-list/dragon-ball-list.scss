@@ -11,7 +11,7 @@
 .dragon-card {
   background: linear-gradient(135deg, #020617 0%, #1074cc 50%, #38bdf8 100%);
   border-radius: 0.75rem;
-  padding: 0.75rem;
+  padding: 1.75rem;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.15s ease;
@@ -27,9 +27,10 @@
 }
 
 .dragon-image {
-  width: 100%;
-  height: 200px;
+  width:100%;
+  height: 380px;
   object-fit: cover;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
+  object-fit: scale-down;
 }

@@ -1,6 +1,53 @@
 .detail-simpsons {
   background: linear-gradient(135deg, #713f12 0%, #facc15 45%, #fef3c7 100%);
   color: #1f2937;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+
+  img {
+    width: 260px;
+    height: 260px;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 4px solid rgba(250, 204, 21, 0.9);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  }
+
+  h2, p {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #111827;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  strong {
+    font-weight: 700;
+    color: #92400e;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-simpsons {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 220px;
+      height: 220px;
+    }
+  }
 }

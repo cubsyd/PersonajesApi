@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-
 import { DragonBallApiService } from '../../Services/dragon-ball-api';
 import { DragonBallDetailModel } from '../../models/DragonBall/dragon-ball-detail-model.Model.js';
 

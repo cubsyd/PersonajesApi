@@ -7,10 +7,7 @@
     *ngFor="let c of characters"
     [routerLink]="['/simpsons', c.id]"
   >
-    <img
-      [src]="'https://thesimpsonsapi.com' + c.portrait_path"
-      [alt]="c.name || 'N/A'"
-    />
+    <img src="https://cdn.thesimpsonsapi.com/500{{ c.portrait_path }}" />
 
     <h3>{{ c.name }}</h3>
     <p>{{ c.occupation }}</p>
